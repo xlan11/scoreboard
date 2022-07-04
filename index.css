@@ -1,0 +1,45 @@
+html {
+    background: #1B244A;
+}
+
+.button-container-home , .button-container-away{
+    width: 155px;
+    height: 45px;
+    text-align:center;
+    padding:10px;
+}
+
+.home-team, .away-team {
+    padding:20px;
+}
+.score-box-home, .score-box-away {
+    width: 155px;
+    height: 120px;
+    background-color:black;
+    padding:10px;
+    color:white;
+    text-align:center;
+    font-size:72px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-name-home, .team-name-away {
+    width: 149px;
+    height: 36px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    text-align: center;
+    color: #EEEEEE;
+    padding:10px;
+}
+
+.scoreboard {
+    display:flex;
+    margin:0 auto;
+    width:500px;
+}
