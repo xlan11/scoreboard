@@ -3,7 +3,7 @@ let homeCount = 0
 
 const homeScoreAddOne = document.getElementById("home-1");
 
-homeScoreAddOne.addEventListener("click", homePlusOne());
+homeScoreAddOne.addEventListener("click", homePlusOne);
 
 function homePlusOne() {
     homeCount = homeCount + 1
