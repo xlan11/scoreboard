@@ -2,6 +2,11 @@ html {
     background: #1B244A;
 }
 
+.container {
+    text-align:center;
+    width:700px;
+}
+
 .button-container-home , .button-container-away{
     width: 155px;
     height: 45px;
@@ -9,10 +14,34 @@ html {
     padding:10px;
 }
 
+#reset-container {
+    margin: 0 auto;
+    text-align: center;
+
+}
+.resetBtn {
+    padding: 10px 20px;
+    margin: auto;
+    text-align:center;
+}
+
 .home-team, .away-team {
     padding:20px;
 }
-.score-box-home, .score-box-away {
+#score-box-home{
+    width: 155px;
+    height: 120px;
+    background-color:black;
+    padding:10px;
+    color:white;
+    text-align:center;
+    font-size:72px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#score-box-away{
     width: 155px;
     height: 120px;
     background-color:black;
