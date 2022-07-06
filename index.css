@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 html {
     background: #1B244A;
 }
@@ -5,13 +7,19 @@ html {
 .container {
     text-align:center;
     width:700px;
+    margin:auto;
+}
+
+.winning {
+    color:chartreuse !important;
+
 }
 
 .button-container-home , .button-container-away{
-    width: 155px;
-    height: 45px;
-    text-align:center;
+    width: 200px;
+    height: 100px;
     padding:10px;
+    margin: auto;
 }
 
 #reset-container {
@@ -23,13 +31,30 @@ html {
     padding: 10px 20px;
     margin: auto;
     text-align:center;
+    margin-top:20px;
+}
+
+button {
+    border: 5px solid white;
+    background-color:darkgreen;
+    padding:10px;
+    text-align:center;
+    color:white;
+    font-size:26px;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color:darkseagreen;
 }
 
 .home-team, .away-team {
     padding:20px;
+    border-left: 3px white solid;
+    border-right: 3px white solid;
 }
 #score-box-home{
-    width: 155px;
+
     height: 120px;
     background-color:black;
     padding:10px;
@@ -39,10 +64,12 @@ html {
     display:flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    border: 5px solid white;
 }
 
 #score-box-away{
-    width: 155px;
+
     height: 120px;
     background-color:black;
     padding:10px;
@@ -52,9 +79,24 @@ html {
     display:flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    border: 5px solid white;
 }
 
-.team-name-home, .team-name-away {
+#team-name-home {
+    width: 149px;
+    height: 36px;
+    font-family: 'Verdana';
+    font-style: normal; 
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    color: #EEEEEE;
+    padding:10px;
+    margin:auto;
+}
+
+#team-name-away {
     width: 149px;
     height: 36px;
     font-family: 'Verdana';
@@ -62,13 +104,17 @@ html {
     font-weight: 700;
     font-size: 40px;
     line-height: 36px;
-    text-align: center;
     color: #EEEEEE;
     padding:10px;
+    margin:auto;
 }
 
 .scoreboard {
-    display:flex;
+    display:flex; 
+    justify-content: center;
     margin:0 auto;
-    width:500px;
+    width:700px;
+    background-color:darkgreen;
+    border: 5px solid white;
+    
 }
