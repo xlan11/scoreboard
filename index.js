@@ -10,17 +10,17 @@ const homeScoreCount1 = document.getElementById("home-1");
 const homeScoreCount2 = document.getElementById("home-2");
 const homeScoreCount3 = document.getElementById("home-3");
 
-homeScoreCount1.addEventListener("click", homePlusOne, checkWinning());
-homeScoreCount2.addEventListener("click", homePlusTwo, checkWinning());
-homeScoreCount3.addEventListener("click", homePlusThree, checkWinning());
+homeScoreCount1.addEventListener("click", homePlusOne);
+homeScoreCount2.addEventListener("click", homePlusTwo);
+homeScoreCount3.addEventListener("click", homePlusThree);
 
 const awayScoreCount1 = document.getElementById("away-1")
 const awayScoreCount2 = document.getElementById("away-2")
 const awayScoreCount3 = document.getElementById("away-3")
 
-awayScoreCount1.addEventListener("click", awayPlusOne, checkWinning());
-awayScoreCount2.addEventListener("click", awayPlusTwo, checkWinning());
-awayScoreCount3.addEventListener("click", awayPlusThree, checkWinning());
+awayScoreCount1.addEventListener("click", awayPlusOne);
+awayScoreCount2.addEventListener("click", awayPlusTwo);
+awayScoreCount3.addEventListener("click", awayPlusThree);
 
 let homeName = document.getElementById("team-name-home")
 let awayName = document.getElementById("team-name-away")
@@ -34,10 +34,12 @@ function checkWinning() {
         awayName.classList.add("winning")
         homeName.classList.remove("winning")
     }
-}
+    else {
+        homeName.classList.remove("winning")
+        awayName.classList.remove("winning")
+    }
+    }
 
-checkWinning();
-console.log(checkWinning)
 
 function homePlusOne() {
     homeCount = homeCount + 1
@@ -48,24 +50,29 @@ function homePlusOne() {
 function homePlusTwo() {
     homeCount = homeCount + 2
     homeScoreboard.innerText = homeCount
+    checkWinning();
 }
 
 function homePlusThree() {
     homeCount = homeCount + 3
     homeScoreboard.innerText = homeCount
+    checkWinning();
 }
 
 function awayPlusOne() {
     awayCount = awayCount + 1
     awayScoreboard.innerText = awayCount
+    checkWinning();
 }
 function awayPlusTwo() {
     awayCount = awayCount + 2
     awayScoreboard.innerText = awayCount
+    checkWinning();
 }
 function awayPlusThree() {
     awayCount = awayCount + 3
     awayScoreboard.innerText = awayCount
+    checkWinning();
 }
 
 function resetScore() {
